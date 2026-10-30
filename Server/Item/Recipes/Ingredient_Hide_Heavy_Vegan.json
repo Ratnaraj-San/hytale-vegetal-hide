@@ -1,0 +1,37 @@
+{
+  "Input": [
+    {
+      "ItemId": "Ingredient_Tree_Sap",
+      "Quantity": 6
+    },
+    {
+      "ItemId": "Ingredient_Fibre",
+      "Quantity": 6
+    },
+    {
+      "ItemId": "Plant_Crop_Mushroom_Cap_White",
+      "Quantity": 6
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Hide_Heavy",
+    "Quantity": 1
+  },
+  "Output": [
+    {
+      "ItemId": "Ingredient_Hide_Heavy",
+      "Quantity": 1
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Crafting",
+      "Id": "Workbench",
+      "Categories": [
+        "Workbench_Tinkering"
+      ]
+    }
+  ],
+  "TimeSeconds": 2,
+  "KnowledgeRequired": false
+}

@@ -1,0 +1,21 @@
+{
+  "Group": "Ratnaraj",
+  "Name": "Vegetal Hide",
+  "Version": "1.0.0",
+  "Description": "Hide recipes with vegetal ingredients, for animal friends.",
+  "Authors": [
+    {
+      "Name": "Ratnaraj",
+      "Email": "",
+      "Url": ""
+    }
+  ],
+  "Website": "",
+  "ServerVersion": ">=0.7.5 <0.8.0",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "SubPlugins": []
+}
