@@ -21,13 +21,17 @@ jobs:
           cp manifest.json icon-256.png dist/
           cp -r Server dist/Server
 
+      - name: Read version from manifest
+        id: manifest
+        run: echo "version=$(jq -r '.Version' manifest.json)" >> "$GITHUB_OUTPUT"
+
       - name: Create zip
         run: |
-          zip -r "VegetalHide_${GITHUB_REF_NAME}.zip" .
+          zip -r "VegetalHide_${{ steps.manifest.outputs.version }}.zip" .
         working-directory: dist
 
       - name: Upload to release
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/VegetalHide_${{ github.ref_name }}.zip
+          files: dist/VegetalHide_${{ steps.manifest.outputs.version }}.zip
           generate_release_notes: true
